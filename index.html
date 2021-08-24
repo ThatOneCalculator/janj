@@ -4,7 +4,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/emojis/858540959216959509.gif?v=1f"/>
 </head>
 <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<audio src="https://cdn.discordapp.com/attachments/810799100940255260/879598735011770439/yt1s.com_-_Fly_me_to_the_moonEvangelion.mp3"></audio>
+<audio loop src="https://cdn.discordapp.com/attachments/810799100940255260/879598735011770439/yt1s.com_-_Fly_me_to_the_moonEvangelion.mp3"/>
 <script>
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -16,11 +16,12 @@ window.addEventListener("DOMContentLoaded", event => {
   ja.addEventListener("click", () => {
     num = getRandomInt(4);
     if (num == 3) {
-      audio.setAttribute('src', 'https://cdn.discordapp.com/attachments/810799100940255260/879617801185280020/janja_on_a_ship_HD_720p_1.mp3');
-      audio.volume = 1.0;
-      audio.play();
+      audio.setAttribute("src", "https://cdn.discordapp.com/attachments/810799100940255260/879617801185280020/janja_on_a_ship_HD_720p_1.mp3");
     }
-    else if (audio.paused) {
+    else {
+      audio.setAttribute("src", "https://cdn.discordapp.com/attachments/810799100940255260/879598735011770439/yt1s.com_-_Fly_me_to_the_moonEvangelion.mp3");
+    }
+    if (audio.paused) {
       audio.volume = 1.0;
       audio.play();
     }
