@@ -2,18 +2,17 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 <audio src="https://cdn.discordapp.com/attachments/810799100940255260/879598735011770439/yt1s.com_-_Fly_me_to_the_moonEvangelion.mp3"></audio>
 <script>
-
 window.addEventListener("DOMContentLoaded", event => {
   let audio = document.querySelector("audio");
-let ja = document.getElementById("janj");
-ja.addEventListener("click", () => {
-  if (audio.paused) {
-    audio.volume = 1.0;
-    audio.play();
-  } else {
-    audio.pause();
-  }
-});
+  let ja = document.getElementById("janj");
+  ja.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.volume = 1.0;
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  });
   audio.volume = 1.0;
   audio.play();
 });
@@ -101,6 +100,11 @@ ja.addEventListener("click", () => {
   font-family: "lato", sans-serif;
   font-size: 11px;
 }
+
+a, a:link, a:visited {
+  color: #6EC0FF;
+}
+  
   
 @keyframes animStar {
   from {
@@ -110,7 +114,6 @@ ja.addEventListener("click", () => {
     transform: translateY(-2000px);
   }
 }
-
 </style>
 <div id="stars"></div>
 <div id="stars2"></div>
