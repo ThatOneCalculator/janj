@@ -14,9 +14,9 @@ window.addEventListener("DOMContentLoaded", event => {
   let ja = document.getElementById("janj");
   let num = 0;
   ja.addEventListener("click", () => {
-    num = getRandomInt(3);
+    num = getRandomInt(4);
     if (num == 2) {
-      document.getElementById("my-audio").setAttribute('src', 'https://cdn.discordapp.com/attachments/810799100940255260/879617801185280020/janja_on_a_ship_HD_720p_1.mp3');
+      audio.setAttribute('src', 'https://cdn.discordapp.com/attachments/810799100940255260/879617801185280020/janja_on_a_ship_HD_720p_1.mp3');
     }
     if (audio.paused) {
       audio.volume = 1.0;
