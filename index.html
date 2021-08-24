@@ -2,8 +2,8 @@
 <audio src="https://cdn.discordapp.com/attachments/810799100940255260/879598735011770439/yt1s.com_-_Fly_me_to_the_moonEvangelion.mp3"></audio>
 <script>
   let audio = document.querySelector("audio");
-  let button = document.querySelector("#janj");
-  button.addEventListener("click", () => {
+  let ja = document.getElementById("janj");
+  ja.addEventListener("click", () => {
   if (audio.paused) {
     audio.volume = 1.0;
     audio.play();
