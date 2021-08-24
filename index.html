@@ -1,11 +1,23 @@
 <!DOCTYPE html>
+<head>
+  <title>janja :))</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/emojis/858540959216959509.gif?v=1f"/>
+</head>
 <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 <audio src="https://cdn.discordapp.com/attachments/810799100940255260/879598735011770439/yt1s.com_-_Fly_me_to_the_moonEvangelion.mp3"></audio>
 <script>
 window.addEventListener("DOMContentLoaded", event => {
   let audio = document.querySelector("audio");
   let ja = document.getElementById("janj");
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+  let num = 0;
   ja.addEventListener("click", () => {
+    num = getRandomInt(3);
+    if num == 2 {
+      document.getElementById("my-audio").setAttribute('src', 'https://cdn.discordapp.com/attachments/810799100940255260/879617801185280020/janja_on_a_ship_HD_720p_1.mp3');
+    }
     if (audio.paused) {
       audio.volume = 1.0;
       audio.play();
@@ -119,7 +131,7 @@ a, a:link, a:visited {
 <div id="stars2"></div>
 <div id="stars3"></div>
 <div id="title">
-  <input type="image" src="https://cdn.discordapp.com/emojis/858540959216959509.gif?v=1" id="janj"/>
+  <input type="image" src="https://cdn.discordapp.com/attachments/857476465305059388/879616848646275082/Webp.net-gifmaker_5.gif" width="250" id="janj"/>
 </div>
 <p id="credits">
   Made by <a href="https://t1c.dev/">ThatOneCalculator</a>. See the <a href="https://github.com/ThatOneCalculator/janj/"> source code</a> for this page.
