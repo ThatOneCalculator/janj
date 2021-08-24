@@ -2,7 +2,7 @@
 <audio src="https://cdn.discordapp.com/attachments/810799100940255260/879598735011770439/yt1s.com_-_Fly_me_to_the_moonEvangelion.mp3"></audio>
 <script>
   let audio = document.querySelector("audio");
-  let button = document.querySelector("#janj");
+  let button = document.getElementById("janj");
   button.addEventListener("click", () => {
   if (audio.paused) {
     audio.volume = 1.0;
@@ -98,11 +98,15 @@
     transform: translateY(-2000px);
   }
 }
+  
+.button {
+  background-image: url("https://cdn.discordapp.com/emojis/858540959216959509.gif?v=1");
+}
 
 </style>
 <div id="stars"></div>
 <div id="stars2"></div>
 <div id="stars3"></div>
 <div id="title">
-  <input type="image" src="https://cdn.discordapp.com/emojis/858540959216959509.gif?v=1" id="janj"/>
+  <button id="janj"/>
 </div>
