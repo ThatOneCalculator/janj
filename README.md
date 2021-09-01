@@ -6,4 +6,4 @@ https://janj.t1c.dev
 
 click da janj enough times for secret :OOOOO
 
-only javascript is for music, everything else is html + css and way too many boxshadows
+only 10 lines of js is for music, everything else is html + css and way too many boxshadows
